@@ -4,44 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
     <link rel="stylesheet" href="styles.css">
-    <title>旅游博客 - 联系</title>
+    <style>
+        /* 导航栏样式 */
+        .nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        .nav li a,
+        .dropdown-btn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav li a:hover,
+        .dropdown:hover .dropdown-btn {
+            background-color: #111;
+        }
+
+        .dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #dddddd;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
     <header class="header">
-        <h1>旅游博客</h1>
+        <h1>联系我们</h1>
+        <p>有任何问题或建议，请随时联系我们。</p>
     </header>
 
     <nav class="nav">
         <ul>
             <li><a href="index.html">主页</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-btn">美食分类</a>
+                <div class="dropdown-content">
+                    <a href="category.html?type=breakfast">早午餐</a>
+                    <a href="category.html?type=dessert">甜点</a>
+                    <a href="category.html?type=coffee">咖啡</a>
+                    <a href="category.html?type=hotpot">锅类</a>
+                    <a href="category.html?type=bbq">烧烤</a>
+                    <a href="category.html?type=japanese">日式</a>
+                    <a href="category.html?type=ice">冰品</a>
+                    <a href="category.html?type=italian">义式</a>
+                    <a href="category.html?type=bar">酒吧</a>
+                    <a href="category.html?type=taiwanese">台式</a>
+                    <a href="category.html?type=bakery">面包糕点</a>
+                    <a href="category.html?type=drink">饮品</a>
+                    <a href="category.html?type=chinese">中式</a>
+                </div>
+            </li>
+            <li><a href="#">联系</a></li>
         </ul>
     </nav>
 
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2>联系我们</h2>
-                <p>有任何问题或建议，请通过以下方式联系我们。</p>
-                <form>
-                    <label for="name">姓名:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">电子邮件:</label><br>
-                    <input type="email" id="email" name="email"><br>
-                    <label for="message">留言:</label><br>
-                    <textarea id="message" name="message"></textarea><br>
-                    <input type="submit" value="提交">
-                </form>
-            </div>
+        <h2>联系表单</h2>
+        <form id="contact-form">
+            <label for="name">联系姓名<span>*</span>:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="phone">联系电话<span>*</span>:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="email">Email<span>*</span>:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">想了解:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="提交">
+        </form>
+        <div class="contact-info">
+            <h2>联系信息</h2>
+            <p>Email: example@example.com</p>
+            <p>电话: 123-456-7890</p>
+            <p>地址: 屏东县市某地某街道</p>
         </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2024 旅游博客. 版权所有.</p>
+        <p>&copy; 2024 屏东美食地图. 版权所有.</p>
     </footer>
-</body>
 
-</html>
+    <!-- 在这里插入 JavaScript 文件 -->
+    <script
