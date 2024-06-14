@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const category = urlParams.get('type');
 
     if (category) {
-        document.getElementById('category-title').innerText = category.toUpperCase() + '美食';
+        document.getElementById('category-title').innerText = category.toUpperCase() + '';
         displayFoodCards(category);
     } else {
         document.getElementById('category-title').innerText = '美食类别';
@@ -33,7 +33,7 @@ function displayFoodCards(category) {
 
     if (category === 'breakfast') {
         document.getElementById('food-1').style.display = 'block';
-        document.getElementById('food-2').style.display = 'block';
+        
         // 添加其他与该类别匹配的卡片
     }
     // 可以为其他类别添加更多条件
