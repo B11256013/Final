@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.foods').innerHTML = '<p>未找到相关美食。</p>';
     }
 
-    // 添加事件监听器以显示和隐藏下拉菜单
+   
     const dropdownBtn = document.querySelector('.dropdown-btn');
     const dropdownContent = document.querySelector('.dropdown-content');
 
@@ -28,13 +28,26 @@ function displayFoodCards(category) {
     const foodCards = document.querySelectorAll('.food-card');
 
     foodCards.forEach(card => {
-        card.style.display = 'none'; // 默认隐藏所有卡片
+        card.style.display = 'none'; 
     });
 
     if (category === 'breakfast') {
         document.getElementById('food-1').style.display = 'block';
-        
-        // 添加其他与该类别匹配的卡片
+          
     }
-    // 可以为其他类别添加更多条件
+   
+    if (category === 'Local dishes') {
+        document.getElementById('food-2').style.display = 'block';
+           
+    }
+
+    if (category === 'coffee') {
+        document.getElementById('food-3').style.display = 'block';
+          
+    }
+    
+    if (category === 'dinner') {
+        document.getElementById('food-4').style.display = 'block';
+           
+    }
 }

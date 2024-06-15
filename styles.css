@@ -1,38 +1,37 @@
 /* reset.css */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* 设置所有元素的 box-sizing 为 border-box */
+    margin: 0;             /* 去掉所有元素的默认外边距 */
+    padding: 0;            /* 去掉所有元素的默认内边距 */
 }
 
 /* styles.css */
 
 /* 公共样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* 设置页面字体为 Arial 或 sans-serif */
 }
 
 .header, .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-     text-align: center;
+    background-color: #333; /* 设置页头和页脚的背景颜色为深灰色 */
+    color: #fff;            /* 设置页头和页脚的文字颜色为白色 */
+    text-align: center;     /* 让文字居中 */
+    padding: 15px 0;        /* 设置上下内边距为 15 像素 */
 }
 
 .nav {
-    background-color: #444;
-    overflow: hidden;
-    text-align: center; /* 让导航栏置中 */
-    display: flex;
-    justify-content: center;
+    background-color: #444; /* 设置导航栏的背景颜色为较深的灰色 */
+    overflow: hidden;       /* 清除浮动带来的影响 */
+    text-align: center;     /* 让导航栏置中 */
+    display: flex;          /* 使用弹性布局 */
+    justify-content: center; /* 让导航栏的子元素水平居中 */
 }
 
 .nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    list-style-type: none; /* 去掉列表项的默认样式 */
+    margin: 0;             /* 去掉外边距 */
+    padding: 0;            /* 去掉内边距 */
+    display: flex;         /* 使用弹性布局 */
 }
 
 .nav ul li {
@@ -40,37 +39,36 @@ body {
 }
 
 .nav ul li a {
-    display: block;
-    color: rgb(160, 13, 13);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    display: block;                 /* 修改为块级元素 */
+    color: rgb(160, 13, 13);        /* 设置文字颜色 */
+    text-align: center;             /* 让文字居中 */
+    padding: 14px 16px;             /* 设置内边距 */
+    text-decoration: none;          /* 去掉文字的下划线 */
     border-bottom: 2px solid transparent; /* 添加底边线 */
 }
 
 .nav ul li a:hover {
-    background-color: #555;
+    background-color: #555;        /* 鼠标悬停时背景颜色 */
     border-bottom: 2px solid white; /* 鼠标悬停时底边线颜色 */
 }
 
 /* 下拉菜单样式 */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #dddddd; /* 下拉菜单背景颜色改为灰色 */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-   
-    border-radius: 0 0 6px 6px; /* 圆角 */
+    display: none;                   /* 默认不显示下拉菜单 */
+    position: absolute;              /* 绝对定位 */
+    background-color: #dddddd;       /* 下拉菜单背景颜色改为灰色 */
+    min-width: 160px;                /* 最小宽度为 160 像素 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* 添加阴影 */
+    z-index: 1;                      /* 设置堆叠顺序 */
+    border-radius: 0 0 6px 6px;      /* 圆角 */
 }
 
 .dropdown-content a {
-    color: #333; /* 文字颜色改为黑色 */
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid #ccc; /* 下拉菜单项之间的分隔线 */
+    color: #333;                    /* 文字颜色改为黑色 */
+    padding: 12px 16px;             /* 设置内边距 */
+    text-decoration: none;          /* 去掉文字的下划线 */
+    display: block;                 /* 修改为块级元素 */
+    border-bottom: 1px solid #ccc;  /* 下拉菜单项之间的分隔线 */
 }
 
 .dropdown-content a:hover {
@@ -78,165 +76,175 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block; /* 鼠标悬停时显示下拉菜单 */
 }
 
 .container {
-    padding: 20px; /* 内边距20px */
-    display: flex; /* 使用弹性布局 */
-    flex-direction: column; /* 主轴方向为列 */
-    align-items: center; /* 子元素在交叉轴方向居中对齐 */
-    text-align: center; /* 文本居中对齐 */
+    padding: 20px;                  /* 内边距20px */
+    display: flex;                  /* 使用弹性布局 */
+    flex-direction: column;         /* 主轴方向为列 */
+    align-items: center;            /* 子元素在交叉轴方向居中对齐 */
+    text-align: center;             /* 文本居中对齐 */
 }
 .container2 {
     padding: 20px; /* 内边距20px */
 }
 
 footer.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* 固定位置 */
+    bottom: 0;      /* 置于底部 */
+    width: 100%;    /* 宽度为100% */
 }
 
 /* 首页特色美食 */
 .featured-foods {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;               /* 使用弹性布局 */
+    flex-wrap: wrap;             /* 容器内的子元素可以换行 */
+    justify-content: center;     /* 子元素水平居中 */
 }
 
 .food {
-    width: 300px;
-    margin: 20px;
+    width: 300px;     /* 宽度300px */
+    margin: 20px;     /* 外边距20px */
+    text-align: center; /* 文字居中 */
 }
 
 .food img {
-    width: 100%;
-    height: auto;
+    width: 100%;     /* 宽度100% */
+    height: auto;    /* 高度自动 */
 }
 
 /* 地图页面 */
 #map {
-    height: 400px;
-    margin-top: 20px;
+    height: 400px;     /* 高度400px */
+    margin-top: 20px;  /* 上边距20px */
 }
 
 /* 联系页面表单样式 */
 form {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 400px;   /* 最大宽度400px */
+    margin: 0 auto;     /* 水平居中 */
 }
 
 label, input, textarea {
-    display: block;
-    margin-bottom: 10px;
+    display: block;        /* 修改为块级元素 */
+    margin-bottom: 10px;   /* 下边距10px */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%;          /* 宽度100% */
+    padding: 8px;         /* 内边距8px */
+    border: 1px solid #ccc; /* 边框颜色 */
+    border-radius: 4px;    /* 边框圆角 */
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: #4CAF50; /* 背景颜色 */
+    color: white;              /* 文字颜色 */
+    padding: 10px 20px;        /* 内边距 */
+    border: none;              /* 无边框 */
+    border-radius: 4px;        /* 边框圆角 */
+    cursor: pointer;           /* 鼠标样式 */
+    transition: background-color 0.3s; /* 过渡效果 */
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* 鼠标悬停时背景颜色 */
 }
 
 .contact-info {
-    margin-top: 20px;
+    margin-top: 20px;  /* 上边距20px */
 }
 
 .contact-info p {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* 下边距5px */
 }
+
 .food-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* 边框颜色 */
+    border-radius: 8px;     /* 边框圆角 */
+    margin: 20px;           /* 外边距20px */
+    padding: 20px;          /* 内边距20px */
+    text-align: center;     /* 文字居中 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
 }
 
 .food-card img {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 100%; /* 最大宽度100% */
+    border-radius: 8px; /* 边框圆角 */
+    margin: 0 auto; /* 水平居中 */
+    display: block; /* 修改为块级元素 */
 }
 
 .food-location {
-    margin-top: 10px;
-    font-style: italic;
+    margin-top: 10px;    /* 上边距10px */
+    font-style: italic;  /* 斜体 */
 }
- /* 导航栏样式 */
-        .nav {
-            background-color: #333;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-        }
 
-        .nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+/* 导航栏样式 */
+.nav {
+    background-color: #333; /* 背景颜色 */
+    overflow: hidden;       /* 清除浮动影响 */
+    display: flex;          /* 使用弹性布局 */
+    justify-content: center; /* 子元素水平居中 */
+    font-weight: bold;
+    font-size: 20px;
+}
 
-        .nav li {
-            float: left;
-        }
+.nav ul {
+    list-style-type: none; /* 去掉列表项的默认样式 */
+    margin: 0;             /* 去掉外边距 */
+    padding: 0;            /* 去掉内边距 */
+}
 
-        .nav li a,
-        .dropdown-btn {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+.nav li {
+    float: left; /* 左浮动 */
+}
 
-        .nav li a:hover,
-        .dropdown:hover .dropdown-btn {
-            background-color: #111;
-        }
+.nav li a,
+.dropdown-btn {
+    display: inline-block; /* 修改为行内块元素 */
+    color: white;          /* 文字颜色 */
+    text-align: center;    /* 文字居中 */
+    padding: 14px 16px;    /* 内边距 */
+    text-decoration: none; /* 去掉文字的下划线 */
+}
 
-        .dropdown {
-            display: inline-block;
-        }
+.nav li a:hover,
+.dropdown:hover .dropdown-btn {
+    background-color: #111; /* 鼠标悬停时背景颜色 */
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #dddddd;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
+.dropdown {
+    display: inline-block; /* 修改为行内块元素 */
+}
 
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
+.dropdown-content {
+    display: none;                   /* 默认不显示 */
+    position: absolute;              /* 绝对定位 */
+    background-color: #dddddd;       /* 背景颜色 */
+    min-width: 160px;                /* 最小宽度 */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    z-index: 1;                      /* 堆叠顺序 */
+}
 
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
-        }
+.dropdown-content a {
+    color: black;                    /* 文字颜色 */
+    padding: 12px 16px;              /* 内边距 */
+    text-decoration: none;           /* 去掉文字的下划线 */
+    display: block;                  /* 修改为块级元素 */
+    text-align: left;                /* 文字左对齐 */
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* 鼠标悬停时背景颜色 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* 鼠标悬停时显示下拉菜单 */
+}
+.cc{
+    text-align: center;
+}
