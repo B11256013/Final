@@ -288,9 +288,13 @@ input[type="submit"]:hover {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
+   .pl>.pc,.dropdown-content,body {
+        background-color:lightcoral ;
+        color: white;
     }
+
+  
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -310,7 +314,7 @@ input[type="submit"]:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {
-        background-color: lightcoral;
+        background-color:lightblue ;
     }
 }
 
