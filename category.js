@@ -31,6 +31,8 @@ function displayFoodCards(category) {
         card.style.display = 'none'; 
     });
 
+
+
     if (category === 'breakfast') {
         document.getElementById('food-1').style.display = 'block';
           
@@ -46,7 +48,7 @@ function displayFoodCards(category) {
           
     }
     
-    if (category === 'dinner') {
+    if(category === 'dinner') {
         document.getElementById('food-4').style.display = 'block';
            
     }
