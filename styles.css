@@ -84,6 +84,10 @@ html, body {
     padding: 20px; /* 内边距20px */
 }
 
+
+
+
+
 footer.footer {
      /* 固定位置 */
     bottom: 0;      /* 置于底部 */
@@ -288,6 +292,16 @@ input[type="submit"]:hover {
 
     .pl>.pc {
         color: white;
+    }
+
+    .container {
+        padding: 20px;                  /* 内边距20px */
+        display: flex;                  /* 使用弹性布局 */
+        flex-direction: column;         /* 主轴方向为列 */
+        align-items: center;            /* 子元素在交叉轴方向居中对齐 */
+        text-align: center;   
+        max-width: 60%; 
+        margin: 0px 10px 0px;         /* 文本居中对齐 */
     }
 
 }
