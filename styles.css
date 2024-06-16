@@ -1,14 +1,7 @@
-/* reset.css */
-* {
-    box-sizing: border-box; /* 设置所有元素的 box-sizing 为 border-box */
-    margin: 0;             /* 去掉所有元素的默认外边距 */
-    padding: 0;            /* 去掉所有元素的默认内边距 */
-} 
-
-/* styles.css */
-
 /* 公共样式 */
-body {
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* 禁止水平滚动 */
     font-family: Arial, sans-serif; /* 设置页面字体为 Arial 或 sans-serif */
 }
 
@@ -86,14 +79,15 @@ body {
     align-items: center;            /* 子元素在交叉轴方向居中对齐 */
     text-align: center;             /* 文本居中对齐 */
 }
+
 .container2 {
     padding: 20px; /* 内边距20px */
 }
 
 footer.footer {
-    position: fixed; /* 固定位置 */
+     /* 固定位置 */
     bottom: 0;      /* 置于底部 */
-    width: 100%;    /* 宽度为100% */
+    max-width: auto;    /* 宽度为100% */
 }
 
 /* 首页特色美食 */
@@ -245,12 +239,11 @@ input[type="submit"]:hover {
 .dropdown:hover .dropdown-content {
     display: block; /* 鼠标悬停时显示下拉菜单 */
 }
-.cc{
+.cc {
     text-align: center;
 }
-/* example.css */
 
-/* For mobile phones: */
+/* 响应式布局 */
 [class*="col-"] {
     width: 100%;
 } 
@@ -277,7 +270,7 @@ input[type="submit"]:hover {
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
     .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}  /* 修正这里的括号错误 */
+    .col-5 {width: 41.66%;}
     .col-6 {width: 50%;}
     .col-7 {width: 58.33%;}
     .col-8 {width: 66.66%;}
@@ -286,15 +279,16 @@ input[type="submit"]:hover {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   body {
-        background-color:lightcoral ;     
+    body {
+        background-color: lightcoral;     
     }
 
-  .pl>.pc {
-        
+    .pl>.pc {
         color: white;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -314,7 +308,7 @@ input[type="submit"]:hover {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     body {
-        background-color:lightblue ;
+        background-color: lightblue;
     }
 }
 
@@ -323,5 +317,4 @@ input[type="submit"]:hover {
     body {
         background-color: lightgoldenrodyellow;
     }
-}
 }
